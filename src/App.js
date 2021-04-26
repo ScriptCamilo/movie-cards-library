@@ -15,8 +15,8 @@ function App() {
         <h1>To-Do List</h1>
       </header>
 
-      <main>
-        <ol>
+      <main className="App-main">
+        <ol className="App-list">
           {tasks.map((theTask) => task(theTask))}
         </ol>
       </main>
