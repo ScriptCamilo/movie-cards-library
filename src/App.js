@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+const tasks = ['Acordar', 'Escovar os dentes',  'Tomar Banho', 'Estudar'];
 const task = (value) => {
   return (
     <li>{value}</li>
@@ -15,9 +16,9 @@ function App() {
       </header>
 
       <main>
-        <ul>
-          {task('Jantar')}
-        </ul>
+        <ol>
+          {tasks.map((theTask) => task(theTask))}
+        </ol>
       </main>
     </div>
   );
